@@ -58,6 +58,19 @@ For sorting dependencies I use `isort` with the following arguments:
 isort . --atomic --star-first --combine-star --combine-as --remove-redundant-aliases --multi-line=3
 ```
 
+or
+
+`pyproject.toml`
+```
+[tool.isort]
+atomic = true
+star_first = true
+combine_star = true
+combine_as_imports = true
+remove_redundant_aliases = true
+multi_line_output = 3
+```
+
 And my code formatter is `autopep8`.
 
 ## Creating a new package
